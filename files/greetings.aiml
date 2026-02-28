@@ -11,11 +11,11 @@
         <template><srai>HELLO</srai></template>
     </category>
     <category>
-        <pattern>Yo</pattern>
+        <pattern>^ YO ^</pattern>
         <template><srai>HELLO</srai></template>
     </category>
     <category>
-        <pattern>Howdy</pattern>
+        <pattern>^ HOWDY ^</pattern>
         <template><srai>HELLO</srai></template>
     </category>
     <category>
@@ -29,5 +29,9 @@
     <category>
         <pattern>WHAT IS MY NAME</pattern>
         <template>Your name is <get name="name"/></template>
+    </category>
+    <category>
+        <pattern>^ REMEMBER ^ MY NAME</pattern>
+        <template><srai>WHAT IS MY NAME</srai></template>
     </category>
 </aiml>

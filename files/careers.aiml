@@ -10,7 +10,7 @@
         First, are you more comfortable creating or analyzing?</template>
     </category>
     <category>
-        <pattern>ADVICE</pattern>
+        <pattern>^ ADVICE ^</pattern>
         <template><srai>CAREER ADVICE</srai></template>
     </category>
     <category>
@@ -89,6 +89,11 @@
     </category>
     <category>
         <pattern>^ ANALYSIS ^</pattern>
+        <that>^ FIRST, ARE YOU MORE COMFORTABLE CREATING OR ANALYZING</that>
+        <template><srai>ANALYZING</srai></template>
+    </category>
+    <category>
+        <pattern>^ ANALYZER ^</pattern>
         <that>^ FIRST, ARE YOU MORE COMFORTABLE CREATING OR ANALYZING</that>
         <template><srai>ANALYZING</srai></template>
     </category>
