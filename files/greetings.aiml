@@ -1,13 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <aiml version="2.0">
     <category>
-        <pattern>HELLO</pattern>
+        <pattern>^ HELLO ^</pattern>
         <template>Hi there! I'm a career advice chatbot for CS students!
         <delay>1</delay>You can tell me your name, or we can hop straight into
         the advice.</template>
     </category>
     <category>
-        <pattern>HI</pattern>
+        <pattern>^ HI ^</pattern>
+        <template><srai>HELLO</srai></template>
+    </category>
+    <category>
+        <pattern>Yo</pattern>
+        <template><srai>HELLO</srai></template>
+    </category>
+    <category>
+        <pattern>Howdy</pattern>
         <template><srai>HELLO</srai></template>
     </category>
     <category>

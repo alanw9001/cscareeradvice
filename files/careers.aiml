@@ -41,6 +41,11 @@
         <that>^ FIRST, ARE YOU MORE COMFORTABLE CREATING OR ANALYZING</that>
         <template><srai>CREATING</srai></template>
     </category>
+    <category>
+        <pattern>^ CREATIVE ^</pattern>
+        <that>^ FIRST, ARE YOU MORE COMFORTABLE CREATING OR ANALYZING</that>
+        <template><srai>CREATING</srai></template>
+    </category>
     
     <category>
         <pattern> ^ JIGSAW ^</pattern>
@@ -79,6 +84,11 @@
     </category>
     <category>
         <pattern>^ ANALYZE ^</pattern>
+        <that>^ FIRST, ARE YOU MORE COMFORTABLE CREATING OR ANALYZING</that>
+        <template><srai>ANALYZING</srai></template>
+    </category>
+    <category>
+        <pattern>^ ANALYSIS ^</pattern>
         <that>^ FIRST, ARE YOU MORE COMFORTABLE CREATING OR ANALYZING</that>
         <template><srai>ANALYZING</srai></template>
     </category>
