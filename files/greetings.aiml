@@ -19,6 +19,10 @@
         <template><srai>HELLO</srai></template>
     </category>
     <category>
+        <pattern>WHO ARE YOU</pattern>
+        <template><srai>HELLO</srai></template>
+    </category>
+    <category>
         <pattern>MY NAME IS *</pattern>
         <template>Nice to meet you, <set name="name"><star/></set>.</template>
     </category>
