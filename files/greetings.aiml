@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+    <category>
+        <pattern>HELLO</pattern>
+        <template>Hi there! I'm a career advice chatbot for CS students!
+        <delay>1</delay>You can tell me your name, or we can hop straight into
+        the advice.</template>
+    </category>
+    <category>
+        <pattern>HI</pattern>
+        <template><srai>HELLO</srai></template>
+    </category>
+    <category>
+        <pattern>MY NAME IS *</pattern>
+        <template>Nice to meet you, <set name="name"><star/></set>.</template>
+    </category>
+    <category>
+        <pattern>CALL ME *</pattern>
+        <template>You got it, <set name="name"><star/></set>.</template>
+    </category>
+    <category>
+        <pattern>WHAT IS MY NAME</pattern>
+        <template>Your name is <get name="name"/></template>
+    </category>
+</aiml>

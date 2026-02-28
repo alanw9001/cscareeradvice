@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml>
+    <category>
+      <pattern>*</pattern>
+      <that>SORRY, I DID NOT QUITE UNDERSTAND THAT</that>
+      <template>Hmm...sorry! I guess I'm having trouble understanding you.
+      I'm only able to understand a limited set of phrases - mostly about 
+      career advice!</template>
+  </category>
+  <category>
+    <pattern>*</pattern>
+    <template>Sorry, I didn't quite understand that.</template>
+  </category>
+</aiml>

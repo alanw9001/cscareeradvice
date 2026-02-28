@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+    <category>
+        <pattern>^ CAREER ADVICE ^</pattern>
+        <template>Yay! That's the thing I do!
+        <br/>I'll ask you a couple questions, and recommend a career path 
+        based on your answers! Each question will have two options to pick 
+        between. Don't think about it too much, just pick one of the options.
+        <delay>1</delay>
+        First, are you more comfortable creating or analyzing?</template>
+    </category>
+    <category>
+        <pattern>ADVICE</pattern>
+        <template><srai>CAREER ADVICE</srai></template>
+    </category>
+    <category>
+        <pattern>IM LOOKING FOR CAREER ADVICE</pattern>
+        <template><srai>CAREER ADVICE</srai></template>
+    </category>
+    <category>
+        <pattern>GOT ANY CAREER ADVICE</pattern>
+        <template><srai>CAREER ADVICE</srai></template>
+    </category>
+    <category>
+        <pattern>IM LOOKING FOR ADVICE</pattern>
+        <template><srai>CAREER ADVICE</srai></template>
+    </category>
+    
+    
+    
+    
+    <category>
+        <pattern>^ CREATING ^</pattern>
+        <that>^ FIRST, ARE YOU MORE COMFORTABLE CREATING OR ANALYZING</that>
+        <template>Awesome! You want to bring ideas to life through technology!
+        <delay>1</delay>
+        Now, which do you like more: jigsaw puzzles or sudoku?</template>
+    </category>
+    <category>
+        <pattern>^ CREATE ^</pattern>
+        <that>^ FIRST, ARE YOU MORE COMFORTABLE CREATING OR ANALYZING</that>
+        <template><srai>CREATING</srai></template>
+    </category>
+    
+    <category>
+        <pattern> ^ JIGSAW ^</pattern>
+        <that>^ JIGSAW PUZZLES OR SUDOKU</that>
+        <template>Wonderful! Now give me a moment to crunch some numbers...
+        <delay>4</delay>
+        Aha! I've calculated the best career match for you: Web Developer!
+        <br/>Web Developers have the oportunity to create a wide array of 
+        exciting projects, putting various libraries together to create
+        unique and eye-catching websites.</template>
+    </category>
+    
+    <category>
+        <pattern> ^ SUDOKU ^</pattern>
+        <that>^ JIGSAW PUZZLES OR SUDOKU</that>
+        <template>Wonderful! Now give me a moment to crunch some numbers...
+        <delay>4</delay>
+        Aha! I've calculated the best career match for you: Software Developer!
+        <br/>Software Developers work on a wide array of software problems, 
+        using logic and intuition to create programs that run 
+        efficiently.</template>
+    </category>
+    
+    
+    
+    
+    <category>
+        <pattern>^ ANALYZING ^</pattern>
+        <that>^ FIRST, ARE YOU MORE COMFORTABLE CREATING OR ANALYZING</that>
+        <template>Great! You want to dig deep and understand complex systems!
+        <delay>1</delay>
+        Now, when you're trying to figure out how something works, what's your
+        approach? Do you try and break it to find it's weaknesses? Or do you 
+        take it apart piece by piece until you can put it back 
+        together?</template>
+    </category>
+    <category>
+        <pattern>^ ANALYZE ^</pattern>
+        <that>^ FIRST, ARE YOU MORE COMFORTABLE CREATING OR ANALYZING</that>
+        <template><srai>ANALYZING</srai></template>
+    </category>
+    
+    <category>
+        <pattern> ^ BREAK ^</pattern>
+        <that>^ PIECE BY PIECE UNTIL YOU CAN PUT IT BACK TOGETHER</that>
+        <template>Wonderful! Now give me a moment to crunch some numbers...
+        <delay>4</delay>
+        Aha! I've calculated the best career match for you: Cybersecurity 
+        Analyst!
+        <br/>Cybersecurity Analysts work to protect sensitive information and
+        access to sensitive systems. They have to understand how computers work 
+        at the deepest level to find and patch any security holes. Often this 
+        involves breaking systems, and thinking outside of the box.</template>
+    </category>
+    <category>
+        <pattern>^ BREAKING ^</pattern>
+        <that>^ PIECE BY PIECE UNTIL YOU CAN PUT IT BACK TOGETHER</that>
+        <template><srai>BREAK</srai></template>
+    </category>
+    <category>
+        <pattern>^ WEAKNESSES ^</pattern>
+        <that>^ PIECE BY PIECE UNTIL YOU CAN PUT IT BACK TOGETHER</that>
+        <template><srai>BREAK</srai></template>
+    </category>
+    <category>
+        <pattern>^ WEAK ^</pattern>
+        <that>^ PIECE BY PIECE UNTIL YOU CAN PUT IT BACK TOGETHER</that>
+        <template><srai>BREAK</srai></template>
+    </category>
+    
+    <category>
+        <pattern> ^ PIECE BY PIECE ^</pattern>
+        <that>^ PIECE BY PIECE UNTIL YOU CAN PUT IT BACK TOGETHER</that>
+        <template>Perfect! You want to methodically pick through a system to 
+        fully understand and optimize it.
+        <delay>1</delay>
+        Ok, last question. Do you prefer abstract or concrete 
+        thinking?</template>
+    </category>
+    <category>
+        <pattern>^ TAKE ^ APART ^</pattern>
+        <that>^ PIECE BY PIECE UNTIL YOU CAN PUT IT BACK TOGETHER</that>
+        <template><srai>PIECE BY PIECE</srai></template>
+    </category>
+    <category>
+        <pattern>^ TOGETHER ^</pattern>
+        <that>^ PIECE BY PIECE UNTIL YOU CAN PUT IT BACK TOGETHER</that>
+        <template><srai>PIECE BY PIECE</srai></template>
+    </category>
+    
+    
+    
+    <category>
+        <pattern>^ ABSTRACT ^</pattern>
+        <that>^ DO YOU PREFER ABSTRACT OR CONCRETE THINKING</that>
+        <template>Wonderful! Now give me a moment to crunch some numbers...
+        <delay>4</delay>
+        Aha! I've calculated the best career match for you: Data Architect!
+        <br/>Data Architects work with complex systems to manage and take 
+        advantage of various amounts of data - from relatively small data sets
+        that need to be accessed quickly and efficiently - to Big Data that can
+        involve billions of data points.</template>
+    </category>
+    <category>
+        <pattern>^ ABSTRACTLY ^</pattern>
+        <that>^ DO YOU PREFER ABSTRACT OR CONCRETE THINKING</that>
+        <template><srai>ABSTRACT</srai></template>
+    </category>
+    
+    <category>
+        <pattern>^ CONCRETE ^</pattern>
+        <that>^ DO YOU PREFER ABSTRACT OR CONCRETE THINKING</that>
+        <template>Wonderful! Now give me a moment to crunch some numbers...
+        <delay>4</delay>
+        Aha! I've calculated the best career match for you: Cloud Engineer!
+        <br/>Cloud Engineers build and utilize cloud computing systems. 
+        Whether that's setting up a scalable and functional server architecture 
+        using a cloud provider, or working for a cloud provider to manage 
+        physical resources to be able to provide those services, it takes a 
+        deep understanding of the internet to succeed.</template>
+    </category>
+    <category>
+        <pattern>^ CONCRETELY ^</pattern>
+        <that>^ DO YOU PREFER ABSTRACT OR CONCRETE THINKING</that>
+        <template><srai>CONCRETE</srai></template>
+    </category>
+    
+</aiml>
